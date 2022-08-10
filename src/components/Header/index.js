@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import plus from './img/svg/plus.svg';
+import plus from '../../img/plus.svg'
 
 const HeaderWrapper = styled.header`
   height: 80px;

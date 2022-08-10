@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
 
-import { Table, Tbody, Tr, Td } from './shared/Table';
+import {Table, Tr, Td, Tbody} from "../Table";
 
-import arrow from './img/svg/arrow.svg';
+import arrow from '../../img/arrow.svg';
 
 const Monitor = styled(Td)`
   cursor: pointer;

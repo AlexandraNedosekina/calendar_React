@@ -5,14 +5,14 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import moment from 'moment';
 
-// import { GlobalStyle } from './theme/globalStyle';
+import {GlobalStyle} from "../Theme/color";
 
-import Header from './Header';
-import Nav from './Nav';
-import Week from './Week';
-import ControlsBottom from './ControlsBottom';
+import Header from "../Header";
+import {Nav} from "../Monitor";
+import {Week} from "../TimeAndWeeks/week";
+import {ControlsBottom} from "../Buttons";
 
-import { defaultTheme } from './theme/defaultTheme';
+import {defaultBg} from "../Theme/defaultBg";
 
 const CalendarWrapper = styled.div`
   text-align: center;
@@ -147,7 +147,7 @@ class Calendar extends Component {
 
     render() {
         return (
-            <ThemeProvider theme={defaultTheme}>
+            <ThemeProvider theme={defaultBg}>
                 <CalendarWrapper>
                     <GlobalStyle />
                     <Header createEvent={this.createEvent} />
@@ -181,4 +181,4 @@ class Calendar extends Component {
     }
 }
 
-export default { Calendar };
+export default Calendar;

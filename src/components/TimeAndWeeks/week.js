@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
 
-import TimeOfDay from './TimeOfDay';
+import {TimeOfDay} from './time';
 
-import { Table, Tbody, Tr, Td } from './shared/Table';
+import {Table, Tbody, Tr, Td} from "../Table";
 
 const start_hour = 8;
 const end_hour = 21;

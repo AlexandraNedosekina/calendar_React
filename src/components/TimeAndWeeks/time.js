@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
 
-import { Td } from './shared/Table';
+import { Td } from "../Table";
 
 const TdEvent = styled(Td)`
   border: 2px solid ${props => props.theme.calendar_border};
   ${({ selected }) =>
     selected &&
-    `
-    
-    background-color:#b3b7ff ;
+    `background-color:#b3b7ff ;
   `}
 `;
 
@@ -19,9 +17,7 @@ const TdEventActive = styled(TdEvent)`
   cursor: pointer;
   ${({ selected }) =>
     selected &&
-    `
-    
-    background-color:#b3b7ff ;
+    `background-color:#b3b7ff ;
   `}
 `;
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { Table, Tbody, Tr, Td } from './shared/Table';
+import {Table, Tr, Td, Tbody} from "../Table";
 
 const ControlsTd = styled(Td)`
   width: 50%;
@@ -65,4 +65,4 @@ class ControlsBottom extends Component {
     }
 }
 
-export default ControlsBottom;
+export {ControlsBottom};
